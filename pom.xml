@@ -18,6 +18,7 @@
 
     <modules>
         <module>Data</module>
+        <module>Import</module>
         <module>Provider</module>
         <module>route-planner-core</module>
         <module>Server</module>
