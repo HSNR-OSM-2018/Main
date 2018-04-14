@@ -4,15 +4,16 @@ The main repository for the route planer project. The different components are m
 
 ## Components
 - [Data](https://github.com/HSNR-OSM-2018/Data): Basic structures used by various components. The repository contains the classes that build the underlying graph.
-- [Import](https://github.com/HSNR-OSM-2018/Import): Used to build the PBF-files with custom structure based on OpenStreetMap exports. During the import irrelevant information is deleted and the structure is adjusted to fit the projects needs (independent component).
+- [Import](https://github.com/HSNR-OSM-2018/Import): Used to build the pbf-files with custom structure based on OpenStreetMap exports. During the import irrelevant information is deleted and the structure is adjusted to fit the projects needs (independent component).
 - [Pathfinder](https://github.com/HSNR-OSM-2018/route-planner-core): Implementation of numerous path-finding algorithms that operate on the graph defined by the Data component.
-- [Provider](https://github.com/HSNR-OSM-2018/Provider): Reading the custom PBF-files and building the graph defined in the Data component.
+- [Provider](https://github.com/HSNR-OSM-2018/Provider): Reading the custom pbf-files and building the graph defined in the Data component.
 - [Server](https://github.com/HSNR-OSM-2018/Server): Interface for the user built based on an HTTP-Server. The frontend provides an OSM interface and inputs for searching paths. The backend builds and manages the graph at creations and calls path-finding algorithms when the user searches for a path.
 
 ## Installation
 
 #### Requirements
-The project requires Java and maven.
+The project requires Java and maven.  
+The importer need OSM c tools as well (Installation e.g. by running `apt install osmctools`).
 
 #### Download repositories
 Clone / download this repository. Then clone / download the components listed above into subfolders. The names of the subfolders are the same as the components except for the pathfinder (download this in folder named 'route-planner-core').
